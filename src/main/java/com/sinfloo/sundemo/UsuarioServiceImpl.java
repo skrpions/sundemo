@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UsuarioServiceImp implements UsuarioService {
+public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired
     private UsuarioRepositorio repositorio;
@@ -18,8 +18,13 @@ public class UsuarioServiceImp implements UsuarioService {
 
     @Override
     public Usuario listarId(int id) {
-        return repositorio.findOne(id);
+        return null;
     }
+    /*
+    @Override
+    public Usuario listarId(int id) {
+        return repositorio.findOne(id);
+    }*/
 
     @Override
     public Usuario add(Usuario u) {
@@ -33,10 +38,16 @@ public class UsuarioServiceImp implements UsuarioService {
 
     @Override
     public Usuario delete(int id) {
+        return null;
+    }
+
+    /*
+    @Override
+    public Usuario delete(int id) {
         Usuario u=repositorio.findOne(id);
         if(u!=null){
             repositorio.delete(u);
         }
         return u;
-    }
+    } */
 }
