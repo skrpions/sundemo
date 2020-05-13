@@ -31,20 +31,12 @@ public class UsuarioServiceImpl implements UsuarioService {
         return repositorio.save(u);
     }
 
-
     @Override
     public Usuario delete(int id) {
-        return null;
-    }
-
-    /*
-
-    @Override
-    public Usuario delete(int id) {
-        Usuario u=repositorio.findOne(id);
-        if(u!=null){
+        Usuario u=repositorio.findById(id);
+        if(u != null){
             repositorio.delete(u);
         }
         return u;
-    } */
+    }
 }

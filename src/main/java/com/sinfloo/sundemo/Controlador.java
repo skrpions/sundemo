@@ -47,13 +47,9 @@ public class Controlador {
         u.setId(id);
         return service.edit(u);
     }
-    /*
-    @DeleteMapping(path = {"/{id}"})
+
+    @DeleteMapping(path = {"/delete/{id}"})
     public Usuario delete(@PathVariable("id") int  id){
         return service.delete(id);
     }
-    */
-
-
-
 }
