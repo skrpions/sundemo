@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin (origins = "http://localhost:4200",maxAge = 3600)
 @RestController // Estoy indicando que es una API REST
-@RequestMapping({"/usuarios"})
+@RequestMapping({"/"})
 
 public class Controlador {
 
@@ -31,7 +31,7 @@ public class Controlador {
     }
 
     // Registrar Nuevo Usuario
-    @PostMapping
+    @PostMapping("/add")
     public Usuario agregar(@RequestBody Usuario u){
         return service.add(u);
     }
