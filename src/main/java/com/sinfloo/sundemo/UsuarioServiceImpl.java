@@ -18,13 +18,8 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario listarId(int id) {
-        return null;
+        return repositorio.findById(id);
     }
-    /*
-    @Override
-    public Usuario listarId(int id) {
-        return repositorio.findOne(id);
-    }*/
 
     @Override
     public Usuario add(Usuario u) {
@@ -33,8 +28,9 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario edit(Usuario u) {
-        return repositorio.save(u);
+        return null;
     }
+
 
     @Override
     public Usuario delete(int id) {
@@ -42,6 +38,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     /*
+
     @Override
     public Usuario delete(int id) {
         Usuario u=repositorio.findOne(id);

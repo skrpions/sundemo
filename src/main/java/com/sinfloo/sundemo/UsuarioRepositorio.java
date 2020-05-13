@@ -12,7 +12,7 @@ public interface UsuarioRepositorio extends Repository<Usuario, Integer> {
 
     // Declaro los 4 metodos del CRUD
     List<Usuario> findAll();
-    //Usuario findOne (int id);
+    Usuario findById (int id);
     Usuario save (Usuario u);
     void delete (Usuario u);
 }

@@ -36,6 +36,7 @@ public class Controlador {
         return service.add(u);
     }
 
+    /*
     @GetMapping(path = {"/{id}"})
     public Usuario listarId(@PathVariable("id")int id){
         return service.listarId(id);
@@ -51,4 +52,8 @@ public class Controlador {
     public Usuario delete(@PathVariable("id") int  id){
         return service.delete(id);
     }
+    */
+
+
+
 }
