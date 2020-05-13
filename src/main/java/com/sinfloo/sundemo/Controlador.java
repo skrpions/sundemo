@@ -36,18 +36,18 @@ public class Controlador {
         return service.add(u);
     }
 
-    /*
+    // Registrar Nuevo Usuario
     @GetMapping(path = {"/{id}"})
     public Usuario listarId(@PathVariable("id")int id){
         return service.listarId(id);
     }
 
-    @PutMapping(path = {"/{id}"})
+    @PutMapping(path = {"/edit/{id}"})
     public Usuario editar(@RequestBody Usuario u,@PathVariable("id") int id){
         u.setId(id);
         return service.edit(u);
     }
-
+    /*
     @DeleteMapping(path = {"/{id}"})
     public Usuario delete(@PathVariable("id") int  id){
         return service.delete(id);

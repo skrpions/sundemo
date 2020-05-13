@@ -28,7 +28,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario edit(Usuario u) {
-        return null;
+        return repositorio.save(u);
     }
 
 
